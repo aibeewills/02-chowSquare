@@ -12,10 +12,12 @@ class payment_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: const Text(
           'Checkout',
           style: TextStyle(
             fontSize: 23.0,
+            color: Colors.black,
             fontWeight: FontWeight.w700,
           ),
         ),
