@@ -1,3 +1,4 @@
+import 'package:chow_square/review_page.dart';
 import 'package:flutter/material.dart';
 import 'package:chow_square/Screens/payment_Screen.dart';
 
@@ -47,7 +48,7 @@ class payment_Screen extends StatelessWidget {
                       height: 17,
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
                         color: const Color(0Xffdadada),
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -275,7 +276,17 @@ class payment_Screen extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              Image.asset('Assets/last_button.png')
+              GestureDetector(
+                  onTap: () {
+                    //navigation
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ReviewPage(),
+                      ),
+                    );
+                  },
+                  child: Image.asset('Assets/last_button.png'))
             ],
           ),
         ),

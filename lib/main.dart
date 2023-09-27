@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:chow_square/Screens/menuPage.dart';
-import 'package:chow_square/Screens/payment_Screen.dart';
+import 'Screens/splash_ screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +11,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
-      title: 'menu page',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const menuPage(),
+      home: SplashScreen(),
+
     );
   }
 }
+      
