@@ -1,5 +1,8 @@
-import 'package:chow_square/Screens//menupage.dart';
+import 'package:chow_square/Screens/payment_Screen.dart';
 import 'package:flutter/material.dart';
+import 'package:chow_square/Screens/menuPage.dart';
+
+
 
 class menuPage extends StatelessWidget {
   const menuPage({super.key});
@@ -20,7 +23,14 @@ class menuPage extends StatelessWidget {
             ),
           ),
           //cart
-          Image.asset('Assets/menucart.png'),
+          GestureDetector(child:Image.asset('Assets/menucart.png'),
+          onTap: () {
+            //navigation
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const payment_Screen()),
+            );
+          },),
         ],
       ),
       ),
@@ -56,7 +66,7 @@ class menuPage extends StatelessWidget {
                             Image.asset('Assets/jellof rice.png',
                               width: 100, height: 80,),
 
-                            const Text('Jellof Rice,',
+                            const Text('Jellof Rice',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w700,
@@ -89,7 +99,7 @@ class menuPage extends StatelessWidget {
                             Image.asset('Assets/Egusi.png',
                               width: 100, height: 80,),
 
-                            const Text('Egusi Soup,',
+                            const Text('Egusi Soup',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w700,
@@ -125,7 +135,7 @@ class menuPage extends StatelessWidget {
                             Image.asset('Assets/banga.png',
                               width: 100, height: 80,),
 
-                            const Text('Banga Soup,',
+                            const Text('Banga Soup',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w700,
@@ -158,7 +168,7 @@ class menuPage extends StatelessWidget {
                             Image.asset('Assets/native.png',
                               width: 100, height: 80,),
 
-                            const Text('Native Rice,',
+                            const Text('Native Rice',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w700,

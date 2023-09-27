@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screens/menuPage.dart';
+import 'package:chow_square/Screens/menuPage.dart';
+import 'package:chow_square/Screens/payment_Screen.dart';
 
 void main() {
   runApp(const MyApp());
