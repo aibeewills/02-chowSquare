@@ -29,7 +29,7 @@ class payment_Screen extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.all(22),
+                padding: EdgeInsets.all(21),
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.zero,
